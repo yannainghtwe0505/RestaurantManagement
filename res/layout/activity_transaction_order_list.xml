@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollViewArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/paymentInfoArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="合計金額(抜):"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/totalAmountOutTax"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCFCF" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="消費税:"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCFCF" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="合計金額(込):"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/totalAmountInTax"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCFCF" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="Tポイント:"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/tpoint"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCFCF" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="割引金額:"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/discountAmount"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#171616" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="支払金額:"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:id="@+id/payAmount"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#171616" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="お預り:"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/actualPayAmount"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCFCF" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="お釣り:"
+                        android:padding="8dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/change"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#CFCFCF" />
+
+                <LinearLayout
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="支払方法:"
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/payMethod"
+                        android:padding="8dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1" />
+
+                    <Button
+                        android:id="@+id/btnUpdatePayMethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="変更" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.afroci.cashapp.adapter.OrderHistoryDetailListView
+                    android:id="@+id/orderHistoryList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.afroci.cashapp.adapter.OrderHistoryDetailListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

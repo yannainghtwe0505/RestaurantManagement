@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+    <!-- body -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <!-- row1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- menu1 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton17"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#5F99C6"
+                    android:src="@drawable/menu1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="座席"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- menu2 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton18"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#CDDC39"
+                    android:src="@drawable/menu2" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注文"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- menu3 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton19"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#C85454"
+                    android:src="@drawable/menu3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="キッチン"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- row2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <!-- menu4 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton20"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#009688"
+                    android:src="@drawable/menu4" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="会計"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- menu5 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton21"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#9950A6"
+                    android:src="@drawable/menu5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注文履歴"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- menu6 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButtonPaymentHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#00A6BC"
+                    android:src="@drawable/menu6" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="取引履歴"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- row3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <!-- menu7 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/menu7"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#3F51B5"
+                    android:src="@drawable/menu7" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="呼出管理"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- menu8 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+            </LinearLayout>
+            <!-- menu9 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- footer_row1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- footer_menu1 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton24"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#ADEDF4"
+                    android:src="@drawable/base_menu2" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="スタッフ情報"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- footer_menu2 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton25"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#ABA1CF"
+                    android:src="@drawable/base_menu3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="端末情報"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- footer_menu3 -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/imageButton23"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#DDE1DA"
+                    android:src="@drawable/base_menu1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ログアウト"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

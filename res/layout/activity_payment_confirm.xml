@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/myScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"
+                    android:background="#03A9F4"
+                    android:padding="8dp"
+                    android:id="@+id/tableId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="取引番号:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/checkInId"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="合計金額(抜):"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/totalAmountOutTax"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="消費税:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="合計金額(込):"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/totalAmountInTax"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Tポイント:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/tpoint"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="割引金額:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/discountAmount"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#171616" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="支払金額:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:textSize="24dp"
+                    android:id="@+id/payAmount"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="割勘:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/warikan1"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/warikan2Area"
+                android:visibility="gone"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text=""
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/warikan2"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#171616" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="お預り:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/actualPayAmount"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="お釣り:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/change"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="支払方法:"
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1" />
+
+                <TextView
+                    android:id="@+id/payMethod"
+                    android:padding="8dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CFCFCF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnSetActualPayAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:text="お預り金額設定" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnSetDiscountAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="割引金額設定" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnSetPayMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:text="支払方法設定" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnSetTPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Tポイント設定" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:backgroundTint="#4CAF50"
+                    android:textSize="30dp"
+                    android:id="@+id/btnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="支払" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

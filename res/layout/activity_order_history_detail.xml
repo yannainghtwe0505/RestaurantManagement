@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollViewArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="48dp"
+                android:background="#039BE5"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注文情報"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/btnDisplayOrderInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_down" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textColor="#0C0B0B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="取引番号"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/check_in_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textColor="#0C0B0B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="テーブル"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/table_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textColor="#0C0B0B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注文番号"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/order_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textColor="#0C0B0B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注文金額"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/amount_in_tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textColor="#0C0B0B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注文日時"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/order_create_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:textColor="#0C0B0B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注文状態"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/order_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnArea"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btnPrint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="印刷"/>
+
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnKanryou"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="48dp"
+                android:background="#039BE5"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注文明細"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/btnDisplayOrderDetailInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_down" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.afroci.cashapp.adapter.OrderHistoryDetailListView
+                    android:id="@+id/detailList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.afroci.cashapp.adapter.OrderHistoryDetailListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- selected menu list area -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E9DA"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <LinearLayout
+        android:background="#D57F00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="ご飯"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#1E1D1D"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/curry_title"
+                android:visibility="invisible"
+                android:text="辛さ"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#1E1D1D"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:lines="1" />
+
+            <TextView
+                android:text="数量"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#1E1D1D"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:lines="1" />
+
+            <TextView
+                android:text=""
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#1E1D1D"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:ellipsize="end"
+                android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- list -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:listSelector="@android:color/transparent"
+            android:id="@+id/selectedLunchOptionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+    <!-- btn -->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#E7E9EA"
+        android:orientation="horizontal"
+        android:padding="4dp">
+        <Button
+
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="閉じる"
+            android:backgroundTint="#D2D6D8"
+            android:textColor="#292828" />
+    </LinearLayout>
+
+
+</LinearLayout>

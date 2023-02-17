@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:paddingRight="4dp"
+            android:background="#1976D2"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/categoriArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="vertical"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.afroci.cashapp.adapter.CategoriListView
+                        android:id="@+id/categoriList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.afroci.cashapp.adapter.CategoriListView>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/subCategoriArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/activeCategoriBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/activeCategoriId"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:background="@drawable/categori"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="3"
+                        android:padding="8dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:id="@+id/iconDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:background="@drawable/categori"
+                        app:srcCompat="@drawable/ic_down" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="vertical"
+                    android:scrollbars="vertical">
+
+                    <com.afroci.cashapp.adapter.CategoriListView
+                        android:id="@+id/subCategoriList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.afroci.cashapp.adapter.CategoriListView>
+
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/menuList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="-65dp"
+        android:background="#E7E9EA"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--
+            <TextView
+                android:id="@+id/textOutTax"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="税抜価格を表示しています、"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textInTax"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="税込価格を表示しています、"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+                -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="100dp"
+                android:gravity="center_vertical"
+                android:text="注文数:"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/selectedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="150dp"
+                android:gravity="center_vertical"
+                android:text="0件"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnOrderConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="確認"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
